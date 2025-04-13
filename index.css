@@ -73,3 +73,8 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* CSS Styles */
+:root {
+  ---sea-shell: hsl(25, 100%, 97%);
+  ---salmon-ig: hsl(9, 100%, 58%);
+}
