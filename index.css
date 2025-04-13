@@ -85,7 +85,48 @@ body {
   font-size: 1rem;
   background-color: var(---sea-shell);
 }
-h1 {
+.texi {
+  padding: 15px;
+}
+h1, ul {
   font-family: 'Chango', sans-serif;
   font-weight: 600;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper a {
+  font-family: 'Chango', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.wrapper ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+.botams {
+  margin-top: 9em;
+}
+.texi h1 {
+ font-size: 2rem;
+}
+button {
+  background-color: var(---salmon-ig);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+#shh {
+  background-color: transparent;
+  color: black; 
+  border: 2px solid black;
 }
