@@ -78,3 +78,14 @@ textarea:not([rows]) {
   ---sea-shell: hsl(25, 100%, 97%);
   ---salmon-ig: hsl(9, 100%, 58%);
 }
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  font-size: 1rem;
+  background-color: var(---sea-shell);
+}
+h1 {
+  font-family: 'Chango', sans-serif;
+  font-weight: 600;
+}
