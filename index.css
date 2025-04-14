@@ -82,20 +82,22 @@ textarea:not([rows]) {
   font-family: 'Roboto', sans-serif;
 }
 body {
+  font-weight: 400;
   font-size: 1rem;
   background-color: var(---sea-shell);
 }
 .texi {
+  margin: 30px;
   padding: 15px;
 }
 h1, ul {
   font-family: 'Chango', sans-serif;
   font-weight: 600;
 }
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.wrapper { 
+  padding: 30px;
+  
+  margin-bottom: 1em;
 }
 .wrapper a {
   font-family: 'Chango', sans-serif;
@@ -103,30 +105,64 @@ h1, ul {
   text-transform: uppercase;
 }
 .wrapper ul {
-  display: flex;
-  flex-direction: row;
+  display: none;
   list-style: none;
-  gap: 10px;
+  gap: 70px;
+  font-weight: 600;
+  padding: 30px;
+}
+.wrapper img {
+  margin-top: 3em;
+  margin: 20px;
+  height: 40px;
+  width: 140px;
 }
 main {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+i {
+  display: block;
 }
 .botams {
-  margin-top: 9em;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 5.3em;
 }
 .texi h1 {
  font-size: 2rem;
+ margin-bottom: 1em;
 }
 button {
   background-color: var(---salmon-ig);
   color: white;
-  padding: 10px;
+  padding: 10px 27px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  font-weight: 600;
 }
 #shh {
   background-color: transparent;
   color: black; 
   border: 2px solid black;
+}
+@media screen and (min-width: 37.5rem) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+  .wrapper ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .botams {
+    flex-direction: row;
+  }
 }
